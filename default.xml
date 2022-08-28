@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <!-- Remotes -->
+    <remote name="yocto" fetch="https://git.yoctoproject.org/git"/>
+    <remote name="openembedded" fetch="https://git.openembedded.org"/>
+    <remote name="yocto-is-easy" fetch="https://github.com/yocto-is-easy"/>
+
+    <!-- Projects -->
+    <project name="poky" revision="mocto" remote="yocto-is-easy" path="workdir/poky"/>
+    <project name="meta-raspberrypi" revision="dunfell" remote="yocto" path="workdir/meta-raspberrypi"/>
+    <project name="meta-openembedded" revision="dunfell" remote="openembedded" path="workdir/meta-openembedded"/>
+    <project name="docker" revision="master" remote="yocto-is-easy" path="docker"/>
+</manifest>
